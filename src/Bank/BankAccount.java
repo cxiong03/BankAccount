@@ -1,9 +1,9 @@
-package com.codewithchang;
+package Bank;
 
 public class BankAccount {
     private int accountNum;
     private String owner;
-    private int balance;
+    protected int balance;
     private String type;
 
     public BankAccount(int accountNum, int balance, String owner, String type) {
@@ -17,14 +17,14 @@ public class BankAccount {
         balance += amt;
     }
 
-    public void withdraw(int amt, int accountNum) {
-        if (balance >= amt && this.accountNum == accountNum) {
-        balance -= amt;
+    public void withdraw(int amt) {
+        if (balance >= amt) {
+            balance -= amt;
+            return;
+        }
         return;
     }
-        return;
-
     public String getDetails() {
-        return type + "Owner: " + owner + "\tAccount Number: " + accountNum + "\tBalance: " + balance;
+        return type + " Account, Owner: " + owner + "\tAccount Number: " + accountNum + "\tBalance: " + balance;
     }
 }
