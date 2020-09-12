@@ -12,10 +12,10 @@ public class Main {
         System.out.println(myAcct.getDetails());
         myAcct.deposit(300);
         System.out.println(myAcct.getDetails());
-//        System.out.println(myCheck.getDetails());
-//        myCheck.deposit(200);
-//        myCheck.withdraw(500);
-//        System.out.println(myCheck.getDetails());
+        System.out.println(myCheck.getDetails());
+        myCheck.deposit(200);
+        myCheck.withdraw(500);
+        System.out.println(myCheck.getDetails());
         myAcct.applyInterest();
         System.out.println(myAcct.getDetails());
     }
