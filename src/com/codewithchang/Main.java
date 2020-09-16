@@ -28,9 +28,9 @@ public class Main {
                 new ArrayList<SavingsAccount>(Arrays.asList(myAcct, savings2))
                 );
         System.out.println(myCheck.getDetails());
-        myCard.charge(50, "1234");
+        System.out.println(myCard.charge(50, "1234") ? "Approved" : "Declined");
         System.out.println(myCheck.getDetails());
-        myCard.charge(200, "3218");
+        System.out.println(myCard.charge(200, "3218") ? "Approved" : "Declined");
         System.out.println(myCheck.getDetails());
     }
 }
