@@ -1,4 +1,7 @@
-package Bank;
+package BankTools;
+
+import Bank.CheckingAccount;
+import Bank.SavingsAccount;
 
 import java.util.List;
 
@@ -20,7 +23,7 @@ public class DebitCard {
     }
 
     public Boolean charge(int amt, String pin) {
-        if (this.pin == pin && primary.balance >= amt) {
+        if (this.pin == pin && primary.getBalance() >= amt) {
             primary.withdraw(amt);
             return true;
         }

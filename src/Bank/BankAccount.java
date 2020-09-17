@@ -27,4 +27,8 @@ public class BankAccount {
     public String getDetails() {
         return type + " Account, Owner: " + owner + "\tAccount Number: " + accountNum + "\tBalance: " + balance;
     }
+
+    public int getBalance() {
+        return balance;
+    }
 }
