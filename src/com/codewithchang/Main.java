@@ -1,7 +1,7 @@
 package com.codewithchang;
 
-import Bank.CheckingAccount;
-import Bank.SavingsAccount;
+import BankAccount.CheckingAccount;
+import BankAccount.SavingsAccount;
 import BankTools.DebitCard;
 
 import java.util.ArrayList;

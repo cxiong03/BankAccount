@@ -1,4 +1,6 @@
-package Bank;
+package BankAccount;
+
+import BankAccount.BankAccount;
 
 public class CheckingAccount extends BankAccount {
     public CheckingAccount(int accountNum, int balance, String owner) {

@@ -1,4 +1,6 @@
-package Bank;
+package BankAccount;
+
+import BankAccount.BankAccount;
 
 public class InvestmentAccount extends BankAccount {
     private int interestRate;
