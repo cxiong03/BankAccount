@@ -1,7 +1,5 @@
 package BankAccount;
 
-import BankAccount.BankAccount;
-
 public class InvestmentAccount extends BankAccount {
     private int interestRate;
     private int period;
@@ -23,5 +21,4 @@ public class InvestmentAccount extends BankAccount {
     public void withdraw(int amt) {
         super.withdraw(amt + withdrawFee);
     }
-
 }

@@ -24,6 +24,7 @@ public class BankAccount {
         }
         return;
     }
+
     public String getDetails() {
         return type + " Account, Owner: " + owner + "\tAccount Number: " + accountNum + "\tBalance: " + balance;
     }

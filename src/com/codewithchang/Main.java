@@ -1,6 +1,8 @@
 package com.codewithchang;
 
+import BankAccount.CDInvestment;
 import BankAccount.CheckingAccount;
+import BankAccount.InvestmentAccount;
 import BankAccount.SavingsAccount;
 import BankTools.DebitCard;
 
@@ -31,5 +33,14 @@ public class Main {
         System.out.println(myCheck.getDetails());
         System.out.println(myCard.charge(200, "3218") ? "Approved" : "Declined");
         System.out.println(myCheck.getDetails());
+
+        CDInvestment myCD = new CDInvestment(10000, 987654, "Paris", 10, 1, 5);
+        System.out.println(myCD.getDetails());
+        myCD.withdraw(1000);
+        System.out.println(myCD.getDetails());
+        InvestmentAccount invAcct = new InvestmentAccount(20000, 65482, "Paris", 5, 3, 'M');
+        System.out.println(invAcct.getDetails());
+        invAcct.withdraw(1000);
+        System.out.println(invAcct.getDetails());
     }
 }

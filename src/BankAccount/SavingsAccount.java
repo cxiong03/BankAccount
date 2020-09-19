@@ -1,7 +1,5 @@
 package BankAccount;
 
-import BankAccount.BankAccount;
-
 public class SavingsAccount extends BankAccount {
     private int interest;
 
